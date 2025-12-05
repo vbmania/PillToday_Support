@@ -1,5 +1,15 @@
 # PillToday Support / 도움말
 
+이 저장소는 PillToday, DupCleaner 등 앱의 지원/정책 문서를 한 곳에 모아 App Store 지원/프라이버시 URL로 재사용하기 위한 공간입니다.
+
+## Canonical URLs (App Store Support/Privacy)
+| App | Support (EN) | Support (KO) | Privacy (EN) | Privacy (KO) |
+| --- | --- | --- | --- | --- |
+| DupCleaner | https://github.com/vbmania/PillToday_Support/blob/main/dupcleaner/support_en.md | https://github.com/vbmania/PillToday_Support/blob/main/dupcleaner/support_ko.md | https://github.com/vbmania/PillToday_Support/blob/main/dupcleaner/privacy_policy_en.md | https://github.com/vbmania/PillToday_Support/blob/main/dupcleaner/privacy_policy_ko.md |
+| PillToday | https://github.com/vbmania/PillToday_Support/blob/main/README.md#contact--문의 | https://github.com/vbmania/PillToday_Support/blob/main/README.md#contact--문의 | https://github.com/vbmania/PillToday_Support/blob/main/privacy_policy_en.md | https://github.com/vbmania/PillToday_Support/blob/main/privacy_policy_ko.md |
+
+---
+
 PillToday는 하루 한 번 큼직한 버튼으로 약 복용을 체크하고, 요일별 알림과 위젯·워치에서 바로 완료를 표시할 수 있는 간단한 약 복용 트래커입니다. 앱 데이터는 기기 내(App Group)에만 저장되며 iCloud를 사용하지 않습니다.
 
 ## Contact / 문의
