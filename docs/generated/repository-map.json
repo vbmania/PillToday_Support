@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "project_id": "pill-today-support",
+  "generated_at": "2026-08-15T23:40:53Z",
+  "source_head": "269c6981132920874aa0e58956f2ff359ef11119",
+  "source_fingerprint": "abb228103f252dbe3f4b4668d518d42c66872587d448e5cac52a1bb7f67a6d07",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 2520,
+      "sha256": "68619836646a4ff1116fe8ff1fc01dd45d6bdfd4da86e906e70232f1e1274bd3"
+    },
+    {
+      "path": "dupcleaner/privacy_policy_en.md",
+      "size": 2021,
+      "sha256": "abd7fb06f3047c5346a0fd04ea22bb216abf26f57a305c0424012f63e448c75c"
+    },
+    {
+      "path": "dupcleaner/privacy_policy_ko.md",
+      "size": 2444,
+      "sha256": "e97d0dd9a95695ce32bbe567ddd57295115d7aa914ee9b8d7d18de70f9440ec7"
+    },
+    {
+      "path": "dupcleaner/support_en.md",
+      "size": 1462,
+      "sha256": "5ada8ba5beea1649a248b3567ad6e51826d1eecf6907d7400aef0bc2b5260976"
+    },
+    {
+      "path": "dupcleaner/support_ko.md",
+      "size": 1806,
+      "sha256": "6b689e2f9778b3ef20291d45595d6cd477c6cc9f9da55e33a2fb3efa0223a59b"
+    },
+    {
+      "path": "privacy_policy_en.md",
+      "size": 1292,
+      "sha256": "b9d4f5a744e61ebec42f1a5acf69b107c4739a06747f2eba20a850b6690ef294"
+    },
+    {
+      "path": "privacy_policy_ko.md",
+      "size": 1568,
+      "sha256": "20b9f2062b17bac7f8b22243eb8cb24d7c9395c9bbbddb885176de02e620a705"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "repository": {
+    "knowledge_only_paths": [
+      ".project-harness/",
+      "docs/changes/",
+      "docs/generated/",
+      "docs/project-harness/",
+      "AGENTS.md"
+    ],
+    "map_exclude_paths": [
+      ".build/",
+      "build/",
+      "DerivedData/",
+      "node_modules/",
+      "dist/"
+    ],
+    "generated_map": "docs/generated/repository-map.json",
+    "default_branch": "main",
+    "canonical_remote": "origin"
+  },
+  "required_docs": [
+    "AGENTS.md",
+    "README.md"
+  ],
+  "source_of_truth": [
+    {
+      "topic": "support-index",
+      "path": "README.md"
+    }
+  ],
+  "project_id": "pill-today-support",
+  "display_name": "PillToday Support",
+  "classification": "MAINTENANCE",
+  "pattern": "C",
+  "rollout_level": 1,
+  "products": [
+    {
+      "id": "pill-today-support",
+      "name": "PillToday Support",
+      "status": "maintenance",
+      "surfaces": [
+        {
+          "id": "pill-support-docs",
+          "type": "web",
+          "path": ".",
+          "status": "maintenance"
+        }
+      ]
+    },
+    {
+      "id": "dup-cleaner-support",
+      "name": "DupCleaner Support",
+      "status": "maintenance",
+      "surfaces": [
+        {
+          "id": "dup-cleaner-support-docs",
+          "type": "web",
+          "path": "dupcleaner",
+          "status": "maintenance"
+        }
+      ]
+    }
+  ],
+  "agent_layers": [
+    {
+      "path": "AGENTS.md",
+      "scope": ".",
+      "role": "repository-router",
+      "inherits": null
+    }
+  ]
+}

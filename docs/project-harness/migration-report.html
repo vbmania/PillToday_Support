@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="data:,">
+  <title>PillToday Support · Project Harness</title>
+  <style>
+:root {
+  color-scheme: light;
+  --ink: oklch(22% 0.035 248);
+  --ink-soft: oklch(42% 0.025 248);
+  --paper: oklch(97% 0.018 82);
+  --paper-deep: oklch(92% 0.028 82);
+  --line: oklch(78% 0.035 82);
+  --accent: oklch(58% 0.16 32);
+  --accent-deep: oklch(38% 0.12 32);
+  --teal: oklch(48% 0.09 184);
+  --success: oklch(45% 0.11 151);
+  --warning: oklch(55% 0.13 75);
+  --blocked: oklch(48% 0.14 24);
+  --surface: oklch(99% 0.008 82);
+  --space-xs: .25rem;
+  --space-sm: .5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --measure: 68ch;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: var(--paper); }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    linear-gradient(90deg, transparent 0 5.5rem, var(--line) 5.5rem 5.6rem, transparent 5.6rem),
+    var(--paper);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  font-kerning: normal;
+}
+a { color: var(--accent-deep); text-underline-offset: .2em; }
+a:hover { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible {
+  outline: .2rem solid var(--teal);
+  outline-offset: .2rem;
+}
+.skip-link { position: fixed; left: 1rem; top: -5rem; z-index: 20; padding: .75rem 1rem; background: var(--ink); color: var(--paper); }
+.skip-link:focus { top: 1rem; }
+.masthead { padding: max(2rem, env(safe-area-inset-top)) 1rem 1.5rem 7rem; border-bottom: 1px solid var(--line); }
+.eyebrow { margin: 0 0 .5rem; color: var(--accent-deep); font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+h1, h2, h3 { font-family: Georgia, "Times New Roman", "Noto Serif KR", serif; line-height: 1.08; letter-spacing: -.025em; }
+h1 { max-width: 16ch; margin: 0; font-size: clamp(2.45rem, 7vw, 5.6rem); }
+h2 { margin: 0 0 1rem; font-size: clamp(1.75rem, 4vw, 3rem); }
+h3 { margin: 0 0 .5rem; font-size: 1.3rem; }
+.dek { max-width: var(--measure); margin: 1.5rem 0 0; color: var(--ink-soft); font-size: clamp(1.05rem, 2.5vw, 1.35rem); }
+.page { width: min(100%, 94rem); margin: 0 auto; padding: 2rem 1rem 5rem 7rem; }
+.status-strip { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; margin: 0 0 2rem; padding: .9rem 0; border-block: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.status-chip { display: inline-flex; align-items: center; gap: .45rem; min-height: 2.75rem; font-size: .88rem; font-weight: 750; }
+.status-chip::before { content: ""; width: .7rem; height: .7rem; border-radius: 50%; background: var(--ink-soft); }
+.status-chip[data-status="complete"]::before { background: var(--success); }
+.status-chip[data-status="prepared"]::before { background: var(--teal); }
+.status-chip[data-status="cataloged"]::before { background: var(--warning); }
+.status-chip[data-status="blocked"]::before { background: var(--blocked); }
+.summary-ledger { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-block: 1px solid var(--ink); margin: 2rem 0 3rem; }
+.metric { padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+.metric:nth-child(odd) { padding-right: 1rem; border-right: 1px solid var(--line); }
+.metric:nth-child(even) { padding-left: 1rem; }
+.metric strong { display: block; font-family: Georgia, serif; font-size: clamp(2rem, 5vw, 3.75rem); font-variant-numeric: tabular-nums; }
+.metric span { color: var(--ink-soft); font-size: .82rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.controls { display: grid; gap: .75rem; margin: 0 0 2rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+label { display: grid; gap: .35rem; color: var(--ink-soft); font-size: .82rem; font-weight: 750; }
+input, select { min-height: 3rem; width: 100%; border: 1px solid var(--ink-soft); border-radius: 0; padding: .7rem .8rem; color: var(--ink); background: var(--surface); font: inherit; }
+.project-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
+.project-row { display: grid; gap: .65rem; padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+.project-row[hidden] { display: none; }
+.project-row a { color: var(--ink); text-decoration: none; }
+.project-row a:hover h3 { color: var(--accent-deep); }
+.project-meta { display: flex; flex-wrap: wrap; gap: .4rem 1rem; color: var(--ink-soft); font-size: .86rem; font-variant-numeric: tabular-nums; }
+.project-summary { max-width: var(--measure); margin: 0; }
+.breadcrumbs { margin: 0 0 2rem; font-size: .9rem; }
+.dossier { display: grid; gap: 2.5rem; }
+.data-rail { align-self: start; border-top: .35rem solid var(--accent); padding-top: 1rem; }
+.data-rail dl { display: grid; grid-template-columns: max-content 1fr; gap: .5rem 1rem; margin: 0; }
+.data-rail dt { color: var(--ink-soft); font-size: .76rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.data-rail dd { margin: 0; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+.section { padding-top: 1.5rem; border-top: 1px solid var(--ink); }
+.promise { max-width: 30ch; margin: 0 0 1.5rem; font-family: Georgia, serif; font-size: clamp(1.45rem, 3vw, 2.2rem); line-height: 1.25; }
+.plain-list { display: grid; gap: .75rem; max-width: var(--measure); margin: 0; padding-left: 1.25rem; }
+.plain-list li::marker { color: var(--accent); font-weight: 900; }
+.layer-stack { list-style: none; margin: 0; padding: 0; border-left: .3rem solid var(--teal); }
+.layer { position: relative; padding: .8rem 0 .8rem 1.25rem; border-bottom: 1px solid var(--line); }
+.layer::before { content: ""; position: absolute; left: -.52rem; top: 1.2rem; width: .72rem; height: .72rem; border-radius: 50%; background: var(--paper); border: .18rem solid var(--teal); }
+.layer code { overflow-wrap: anywhere; }
+.layer small { display: block; color: var(--ink-soft); }
+.evidence-table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+.evidence-table th, .evidence-table td { padding: .75rem .5rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.evidence-table th { color: var(--ink-soft); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; }
+.next-action { padding: 1.5rem; border: 1px solid var(--accent-deep); background: var(--surface); }
+.next-action p { max-width: var(--measure); margin: 0; }
+.truth-panel { margin: 0 0 2rem; padding: 1.25rem; border: 1px solid var(--teal); background: var(--surface); }
+.truth-panel h2 { font-size: clamp(1.35rem, 3vw, 2rem); }
+.truth-panel p { max-width: var(--measure); }
+.truth-panel code { display: block; margin-top: .75rem; padding: .75rem; overflow-wrap: anywhere; }
+code { padding: .08rem .3rem; background: var(--paper-deep); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; font-variant-ligatures: none; }
+footer { padding: 2rem 1rem max(2rem, env(safe-area-inset-bottom)) 7rem; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: .82rem; }
+@media (min-width: 44rem) {
+  .masthead, .page, footer { padding-inline-start: 8rem; padding-inline-end: 2rem; }
+  .controls { grid-template-columns: 2fr 1fr; }
+  .project-row { grid-template-columns: minmax(14rem, .75fr) minmax(18rem, 1.25fr); align-items: baseline; }
+  .summary-ledger { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .metric { border-bottom: 0; border-right: 1px solid var(--line); padding-inline: 1rem; }
+  .metric:first-child { padding-left: 0; }
+  .metric:last-child { border-right: 0; }
+}
+@media (min-width: 68rem) {
+  .dossier { grid-template-columns: minmax(15rem, 20rem) minmax(0, 1fr); gap: 4rem; }
+  .data-rail { position: sticky; top: 1.5rem; }
+}
+@media (hover: hover) and (pointer: fine) {
+  .project-row { transition: padding .16s ease, background .16s ease; }
+  .project-row:hover { padding-inline: .75rem; background: var(--surface); }
+}
+@media (pointer: coarse) { a, summary, input, select { min-height: 2.75rem; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+@media (forced-colors: active) { .status-chip::before, .layer::before { forced-color-adjust: none; border: 2px solid CanvasText; background: Canvas; } }
+@media print { body { background: white; } .controls, .skip-link { display: none; } .page, .masthead, footer { padding-left: 1rem; } .data-rail { position: static; } }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <header class="masthead">
+    <p class="eyebrow">Project migration dossier · Level 1</p>
+    <h1>PillToday Support</h1>
+    <p class="dek">PillToday와 DupCleaner 지원 문서를 제품별로 구분해 복원합니다.</p>
+  </header>
+  <main id="main" class="page">
+    <p class="breadcrumbs">Project Harness migration report</p>
+    <div class="status-strip"><span class="status-chip" data-status="complete">Canonical 마이그레이션 완료</span></div>
+    <div class="dossier">
+      <aside class="data-rail" aria-label="마이그레이션 메타데이터">
+        <dl>
+          <dt>경로</dt><dd>/Users/work/Develop/PillToday_Support</dd>
+          <dt>Canonical</dt><dd>/Users/work/Develop/PillToday_Support</dd>
+          <dt>새 대화 위치</dt><dd>/Users/work/Develop/PillToday_Support</dd>
+          <dt>분류</dt><dd>MAINTENANCE</dd>
+          <dt>패턴</dt><dd>C</dd>
+          <dt>도입 수준</dt><dd>Level 1</dd>
+          <dt>브랜치</dt><dd>main</dd>
+          <dt>HEAD</dt><dd>269c6981132920874aa0e58956f2ff359ef11119</dd>
+          <dt>연속성</dt><dd>snapshot-only</dd>
+        </dl>
+      </aside>
+      <div>
+        <section class="section" aria-labelledby="expect-title">
+          <p class="eyebrow">What you can expect</p>
+          <h2 id="expect-title">완료 후 기대할 수 있는 것</h2>
+          <p class="promise">PillToday와 DupCleaner 지원 문서를 제품별로 구분해 복원합니다.</p>
+          <ul class="plain-list"><li>두 지원 제품 registry</li><li>지원·개인정보 문서의 repository-local 진입점</li></ul>
+        </section>
+        <section class="section" aria-labelledby="migration-title">
+          <p class="eyebrow">Migration anatomy</p>
+          <h2 id="migration-title">어떻게 준비되었는가</h2>
+          <ul class="plain-list"><li>기존 AGENTS 본문과 하위 레이어 보존</li><li>repository-local project manifest와 source-of-truth 라우팅</li><li>source fingerprint 기반 repository map</li><li>Level 1 router와 inventory 계약</li></ul>
+        </section>
+        <section class="section" aria-labelledby="agents-title">
+          <p class="eyebrow">Instruction layers</p>
+          <h2 id="agents-title">AGENTS 레이어 통합</h2>
+          <p class="project-summary">런타임·현재 사용자 지시가 최상위에 있고, 전역 AGENTS는 모든 저장소의 공통 기본값을 제공합니다. 저장소 루트는 공통 시작·안전·검증을 라우팅하며, 하위 파일은 해당 디렉터리의 더 구체적인 계약을 유지합니다. repository 레이어끼리 충돌하면 현재 작업 경로에서 가장 가까운 AGENTS를 적용합니다.</p>
+          <ol class="layer-stack"><li class="layer"><strong>global-default</strong> <code>~/.codex/AGENTS.md</code><small>scope: 모든 로컬 프로젝트의 공통 운영·안전 기본값</small></li><li class="layer"><strong>repository-router</strong> <code>AGENTS.md</code><small>scope: .</small></li></ol>
+        </section>
+        <section class="section" aria-labelledby="evidence-title">
+          <p class="eyebrow">Evidence ledger</p>
+          <h2 id="evidence-title">확인된 준비 상태</h2>
+          <table class="evidence-table"><thead><tr><th>순서</th><th>검증 신호</th></tr></thead><tbody><tr><td>01</td><td>knowledge-check errors=0 warnings=0</td></tr></tbody></table>
+        </section>
+        <section class="section" aria-labelledby="gates-title">
+          <p class="eyebrow">Boundaries</p>
+          <h2 id="gates-title">남은 게이트</h2>
+          <ul class="plain-list"><li>공개 호스팅 상태는 별도 확인</li></ul>
+        </section>
+        <section class="section next-action" aria-labelledby="next-title">
+          <p class="eyebrow">Safe next action</p>
+          <h2 id="next-title">다음에 할 일</h2>
+          <p>지원 문서 변경 시 대상 제품과 언어를 먼저 선택합니다.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer>Project Harness · 저장소 증거와 외부 운영 상태를 분리해 보고합니다.</footer>
+</body>
+</html>
