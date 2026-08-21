@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "handoff_id": "H-HR001-T001",
+  "change_id": "HARNESS-RUNS-001",
+  "task_id": "T-001",
+  "assignment_id": "A-HR001-T001",
+  "run_id": "R-HR001-T001",
+  "status": "accepted",
+  "summary": "새 대화 bootstrap과 Agent Run 실행 계보 router를 적용했다",
+  "commit_sha": "9b4b14e46f7594ed6af74bb8ea861a2f02ccaffa",
+  "changed_files": [
+    "AGENTS.md",
+    "docs/changes/active/HARNESS-RUNS-001/assignments/A-HR001-T001.json",
+    "docs/changes/active/HARNESS-RUNS-001/design.md",
+    "docs/changes/active/HARNESS-RUNS-001/findings.md",
+    "docs/changes/active/HARNESS-RUNS-001/manifest.json",
+    "docs/changes/active/HARNESS-RUNS-001/proposal.md",
+    "docs/changes/active/HARNESS-RUNS-001/runs/R-HR001-T001.json",
+    "docs/changes/active/HARNESS-RUNS-001/tasks.json"
+  ],
+  "evidence_ids": [
+    "E-HR001-CHECK"
+  ],
+  "submitted_at": "2026-08-21T16:14:32Z",
+  "reviewed_at": "2026-08-21T16:14:32Z",
+  "reviewed_by": "Coordinator",
+  "decision_notes": "clean IDLE preflight, exact router diff, check 0 errors/0 warnings 확인"
+}

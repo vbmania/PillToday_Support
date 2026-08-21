@@ -5,9 +5,9 @@
     {
       "id": "T-001",
       "title": "새 대화 실행 router 갱신",
-      "status": "in_progress",
+      "status": "done",
       "acceptance": "루트 AGENTS가 bootstrap --resume, continuity gate, Assignment → Run → Handoff → Evidence → Coordinator acceptance를 안내하고 Harness check가 오류 없이 통과한다.",
-      "verification": null,
+      "verification": "handoff:H-HR001-T001",
       "execution_mode": "direct",
       "execution_reason": "Small bounded changes default to Coordinator execution."
     }

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "evidence_id": "E-HR001-CHECK",
+  "change_id": "HARNESS-RUNS-001",
+  "task_id": "T-001",
+  "assignment_id": "A-HR001-T001",
+  "run_id": "R-HR001-T001",
+  "kind": "verification",
+  "status": "passed",
+  "command": "/Users/work/Develop/project-harness/bin/project-harness --repo /Users/work/Develop/PillToday_Support check",
+  "sha": "9b4b14e46f7594ed6af74bb8ea861a2f02ccaffa",
+  "artifact": null,
+  "recorded_at": "2026-08-21T16:14:32Z"
+}

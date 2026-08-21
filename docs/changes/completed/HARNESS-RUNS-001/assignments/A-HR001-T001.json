@@ -4,7 +4,7 @@
   "change_id": "HARNESS-RUNS-001",
   "task_id": "T-001",
   "execution_mode": "direct",
-  "status": "running",
+  "status": "accepted",
   "role": "Coordinator",
   "base_sha": "9feb5b34f674ba871554bf9cffde83fd88b96caa",
   "branch": "main",
@@ -18,5 +18,5 @@
     "/Users/work/Develop/project-harness/bin/project-harness --repo /Users/work/Develop/PillToday_Support check"
   ],
   "created_at": "2026-08-21T16:08:53Z",
-  "updated_at": "2026-08-21T16:08:53Z"
+  "updated_at": "2026-08-21T16:14:32Z"
 }
