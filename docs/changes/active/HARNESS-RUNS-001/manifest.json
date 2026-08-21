@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "change_id": "HARNESS-RUNS-001",
+  "title": "Agent Run 새 대화 실행 계약 전파",
+  "status": "active",
+  "branch": "main",
+  "product_id": "pill-today-support",
+  "surface_ids": [
+    "pill-support-docs"
+  ],
+  "created_at": "2026-08-21T16:08:53Z",
+  "updated_at": "2026-08-21T16:08:53Z",
+  "base_sha": "9feb5b34f674ba871554bf9cffde83fd88b96caa",
+  "goals": [
+    "새 대화가 bootstrap --resume과 실행 원장 gate를 기본으로 사용한다"
+  ],
+  "non_goals": [
+    "지원 콘텐츠, 공개 호스팅 상태를 변경하지 않는다"
+  ],
+  "blockers": [],
+  "required_docs": [],
+  "reconciliation": {
+    "last_reconciled_sha": "1f1b87c46cbb09889a7a72a802f385cd2a548b15",
+    "reconciled_at": "2026-08-21T16:08:53Z",
+    "notes": "Initialized from the latest non-knowledge source commit."
+  },
+  "verification": []
+}

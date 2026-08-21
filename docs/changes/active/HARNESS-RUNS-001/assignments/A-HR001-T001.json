@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "assignment_id": "A-HR001-T001",
+  "change_id": "HARNESS-RUNS-001",
+  "task_id": "T-001",
+  "execution_mode": "direct",
+  "status": "running",
+  "role": "Coordinator",
+  "base_sha": "9feb5b34f674ba871554bf9cffde83fd88b96caa",
+  "branch": "main",
+  "worktree": "/Users/work/Develop/PillToday_Support",
+  "write_set": [
+    "AGENTS.md",
+    "docs/changes/active/HARNESS-RUNS-001/**"
+  ],
+  "delegation_reason": "루트 managed router 한 곳을 갱신하는 bounded knowledge change",
+  "required_verification": [
+    "/Users/work/Develop/project-harness/bin/project-harness --repo /Users/work/Develop/PillToday_Support check"
+  ],
+  "created_at": "2026-08-21T16:08:53Z",
+  "updated_at": "2026-08-21T16:08:53Z"
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "run_id": "R-HR001-T001",
+  "assignment_id": "A-HR001-T001",
+  "change_id": "HARNESS-RUNS-001",
+  "task_id": "T-001",
+  "status": "running",
+  "runtime": {
+    "thread_id": null,
+    "model": "gpt-5.6-sol",
+    "effort": "xhigh"
+  },
+  "usage": null,
+  "started_at": "2026-08-21T16:08:53Z",
+  "ended_at": null
+}
