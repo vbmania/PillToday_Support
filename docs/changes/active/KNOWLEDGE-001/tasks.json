@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "change_id": "KNOWLEDGE-001",
+  "tasks": [
+    {
+      "id": "T-001",
+      "title": "Explicit Knowledge Contract 초기화",
+      "status": "pending",
+      "acceptance": "project.json에 표준 8-topic explicit contract가 있고 knowledge-status/check 오류 0건이며 unreviewed/missing 상태가 정직하게 보존된다",
+      "verification": null,
+      "execution_mode": "direct",
+      "execution_reason": "단일 knowledge-only config 변경을 Coordinator가 순차 적용한다"
+    }
+  ]
+}
