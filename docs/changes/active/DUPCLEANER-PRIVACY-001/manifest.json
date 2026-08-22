@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "change_id": "DUPCLEANER-PRIVACY-001",
+  "title": "DupCleaner 광고 데이터 개인정보 처리방침 정합화",
+  "status": "active",
+  "branch": "main",
+  "product_id": "dup-cleaner-support",
+  "surface_ids": [
+    "dup-cleaner-support-docs"
+  ],
+  "created_at": "2026-08-22T11:11:10Z",
+  "updated_at": "2026-08-22T11:11:10Z",
+  "base_sha": "04b06aba23c57841de507943d68b86501d7745ed",
+  "goals": [
+    "공개 한국어·영어 개인정보 처리방침이 Firebase Analytics/Crashlytics, Google Mobile Ads/UMP, StoreKit 및 로컬 파일 처리와 일치한다."
+  ],
+  "non_goals": [
+    "PillToday 개인정보 처리방침 변경"
+  ],
+  "blockers": [],
+  "required_docs": [],
+  "reconciliation": {
+    "last_reconciled_sha": "1f1b87c46cbb09889a7a72a802f385cd2a548b15",
+    "reconciled_at": "2026-08-22T11:11:10Z",
+    "notes": "Initialized from the latest non-knowledge source commit."
+  },
+  "verification": [],
+  "knowledge_impact": {
+    "status": "pending",
+    "reviewed_sha": null,
+    "reviewed_at": null,
+    "topic_reviews": []
+  }
+}

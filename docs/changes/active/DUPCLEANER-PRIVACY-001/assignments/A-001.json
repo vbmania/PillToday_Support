@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "assignment_id": "A-001",
+  "change_id": "DUPCLEANER-PRIVACY-001",
+  "task_id": "T-001",
+  "execution_mode": "direct",
+  "status": "running",
+  "role": "Coordinator",
+  "base_sha": "04b06aba23c57841de507943d68b86501d7745ed",
+  "branch": "main",
+  "worktree": "/Users/work/Develop/PillToday_Support",
+  "write_set": [
+    "dupcleaner/privacy_policy_en.md,dupcleaner/privacy_policy_ko.md,docs/changes/active/DUPCLEANER-PRIVACY-001/**"
+  ],
+  "delegation_reason": "광고 SDK와 공개 정책을 직접 대조해 두 언어 문서를 갱신한다.",
+  "required_verification": [
+    "정책 필수 용어 검사, project-harness check, 공개 GitHub URL 확인"
+  ],
+  "created_at": "2026-08-22T11:11:18Z",
+  "updated_at": "2026-08-22T11:11:18Z"
+}

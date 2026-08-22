@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "run_id": "R-001",
+  "assignment_id": "A-001",
+  "change_id": "DUPCLEANER-PRIVACY-001",
+  "task_id": "T-001",
+  "status": "running",
+  "runtime": {
+    "thread_id": null,
+    "model": "gpt-5",
+    "effort": "high"
+  },
+  "usage": null,
+  "started_at": "2026-08-22T11:11:18Z",
+  "ended_at": null
+}

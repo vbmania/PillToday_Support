@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "change_id": "DUPCLEANER-PRIVACY-001",
+  "tasks": [
+    {
+      "id": "T-001",
+      "title": "DupCleaner 광고 개인정보 처리방침 갱신·공개",
+      "status": "pending",
+      "acceptance": "한국어·영어 정책이 실제 SDK 데이터 범주·목적·제3자·사용자 선택을 설명하고 공개 GitHub URL에서 최신 문서가 확인된다.",
+      "verification": "한국어·영어 필수 SDK/데이터/선택 문구 검사, git diff --check, project-harness check, origin/main push 후 공개 GitHub URL HTTP 200 및 최신 날짜 확인",
+      "execution_mode": "direct",
+      "execution_reason": "두 언어 문서와 공개 확인을 한 owner가 정합하게 처리한다."
+    }
+  ]
+}
