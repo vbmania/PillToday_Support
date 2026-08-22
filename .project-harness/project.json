@@ -69,5 +69,151 @@
       "role": "repository-router",
       "inherits": null
     }
-  ]
+  ],
+  "knowledge_contract": {
+    "schema_version": 1,
+    "enforce_change_impact": true,
+    "topics": [
+      {
+        "id": "purpose",
+        "title": "Purpose and product scope",
+        "required": true,
+        "applicable": true,
+        "canonical_paths": [
+          "README.md"
+        ],
+        "watch_paths": [
+          "**",
+          "dupcleaner/**"
+        ],
+        "review": {
+          "reviewed_sha": null,
+          "reviewed_at": null,
+          "evidence_paths": [],
+          "notes": null
+        }
+      },
+      {
+        "id": "architecture",
+        "title": "Architecture and system boundaries",
+        "required": true,
+        "applicable": true,
+        "canonical_paths": [],
+        "watch_paths": [
+          "**",
+          "dupcleaner/**"
+        ],
+        "review": {
+          "reviewed_sha": null,
+          "reviewed_at": null,
+          "evidence_paths": [],
+          "notes": null
+        }
+      },
+      {
+        "id": "development",
+        "title": "Development and local execution",
+        "required": true,
+        "applicable": true,
+        "canonical_paths": [
+          "README.md"
+        ],
+        "watch_paths": [
+          "**",
+          "dupcleaner/**"
+        ],
+        "review": {
+          "reviewed_sha": null,
+          "reviewed_at": null,
+          "evidence_paths": [],
+          "notes": null
+        }
+      },
+      {
+        "id": "verification",
+        "title": "Testing and verification",
+        "required": true,
+        "applicable": true,
+        "canonical_paths": [],
+        "watch_paths": [
+          "**",
+          "dupcleaner/**"
+        ],
+        "review": {
+          "reviewed_sha": null,
+          "reviewed_at": null,
+          "evidence_paths": [],
+          "notes": null
+        }
+      },
+      {
+        "id": "data",
+        "title": "Data model and persistence",
+        "required": false,
+        "applicable": true,
+        "canonical_paths": [],
+        "watch_paths": [
+          "**",
+          "dupcleaner/**"
+        ],
+        "review": {
+          "reviewed_sha": null,
+          "reviewed_at": null,
+          "evidence_paths": [],
+          "notes": null
+        }
+      },
+      {
+        "id": "integrations",
+        "title": "External integrations and security boundaries",
+        "required": false,
+        "applicable": true,
+        "canonical_paths": [],
+        "watch_paths": [
+          "**",
+          "dupcleaner/**"
+        ],
+        "review": {
+          "reviewed_sha": null,
+          "reviewed_at": null,
+          "evidence_paths": [],
+          "notes": null
+        }
+      },
+      {
+        "id": "operations",
+        "title": "Operations, automation, and release",
+        "required": false,
+        "applicable": true,
+        "canonical_paths": [],
+        "watch_paths": [
+          "**",
+          "dupcleaner/**"
+        ],
+        "review": {
+          "reviewed_sha": null,
+          "reviewed_at": null,
+          "evidence_paths": [],
+          "notes": null
+        }
+      },
+      {
+        "id": "risks",
+        "title": "Risks, constraints, and recovery",
+        "required": false,
+        "applicable": true,
+        "canonical_paths": [],
+        "watch_paths": [
+          "**",
+          "dupcleaner/**"
+        ],
+        "review": {
+          "reviewed_sha": null,
+          "reviewed_at": null,
+          "evidence_paths": [],
+          "notes": null
+        }
+      }
+    ]
+  }
 }
