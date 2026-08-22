@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "handoff_id": "H-001",
+  "change_id": "DUPCLEANER-PRIVACY-001",
+  "task_id": "T-001",
+  "assignment_id": "A-001",
+  "run_id": "R-001",
+  "status": "accepted",
+  "summary": "광고 SDK와 StoreKit 데이터 흐름을 반영해 EN/KO 정책을 갱신하고 공개 원격 URL까지 검증했다.",
+  "commit_sha": "1e4b76611202a0c2eec753102f8e2299408e18ff",
+  "changed_files": [
+    "docs/changes/active/DUPCLEANER-PRIVACY-001/assignments/A-001.json",
+    "docs/changes/active/DUPCLEANER-PRIVACY-001/design.md",
+    "docs/changes/active/DUPCLEANER-PRIVACY-001/findings.md",
+    "docs/changes/active/DUPCLEANER-PRIVACY-001/manifest.json",
+    "docs/changes/active/DUPCLEANER-PRIVACY-001/proposal.md",
+    "docs/changes/active/DUPCLEANER-PRIVACY-001/runs/R-001.json",
+    "docs/changes/active/DUPCLEANER-PRIVACY-001/tasks.json",
+    "dupcleaner/privacy_policy_en.md",
+    "dupcleaner/privacy_policy_ko.md"
+  ],
+  "evidence_ids": [
+    "E-001",
+    "E-002",
+    "E-003"
+  ],
+  "submitted_at": "2026-08-22T11:22:09Z",
+  "reviewed_at": "2026-08-22T11:22:09Z",
+  "reviewed_by": "Coordinator",
+  "decision_notes": "정책 범주, 제3자, 사용자 선택, 공개 URL이 수용 기준을 충족한다."
+}

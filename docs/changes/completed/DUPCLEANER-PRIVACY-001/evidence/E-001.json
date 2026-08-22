@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "evidence_id": "E-001",
+  "change_id": "DUPCLEANER-PRIVACY-001",
+  "task_id": "T-001",
+  "assignment_id": "A-001",
+  "run_id": "R-001",
+  "kind": "verification",
+  "status": "passed",
+  "command": "git diff --check; required policy terminology checks; project-harness check",
+  "sha": "1e4b76611202a0c2eec753102f8e2299408e18ff",
+  "artifact": "dupcleaner/privacy_policy_en.md",
+  "recorded_at": "2026-08-22T11:21:30Z"
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "evidence_id": "E-002",
+  "change_id": "DUPCLEANER-PRIVACY-001",
+  "task_id": "T-001",
+  "assignment_id": "A-001",
+  "run_id": "R-001",
+  "kind": "verification",
+  "status": "passed",
+  "command": "HTTP GET public raw GitHub EN/KO privacy policy URLs",
+  "sha": "1e4b76611202a0c2eec753102f8e2299408e18ff",
+  "artifact": "https://raw.githubusercontent.com/vbmania/PillToday_Support/main/dupcleaner/privacy_policy_en.md",
+  "recorded_at": "2026-08-22T11:21:30Z"
+}

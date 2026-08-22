@@ -4,7 +4,7 @@
   "assignment_id": "A-001",
   "change_id": "DUPCLEANER-PRIVACY-001",
   "task_id": "T-001",
-  "status": "running",
+  "status": "completed",
   "runtime": {
     "thread_id": null,
     "model": "gpt-5",
@@ -12,5 +12,5 @@
   },
   "usage": null,
   "started_at": "2026-08-22T11:11:18Z",
-  "ended_at": null
+  "ended_at": "2026-08-22T11:21:29Z"
 }

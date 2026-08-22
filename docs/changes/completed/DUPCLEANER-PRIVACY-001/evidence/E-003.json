@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "evidence_id": "E-003",
+  "change_id": "DUPCLEANER-PRIVACY-001",
+  "task_id": "T-001",
+  "assignment_id": "A-001",
+  "run_id": "R-001",
+  "kind": "verification",
+  "status": "passed",
+  "command": "정책 필수 용어 검사, project-harness check, 공개 GitHub URL 확인",
+  "sha": "1e4b76611202a0c2eec753102f8e2299408e18ff",
+  "artifact": "dupcleaner/privacy_policy_ko.md",
+  "recorded_at": "2026-08-22T11:22:09Z"
+}

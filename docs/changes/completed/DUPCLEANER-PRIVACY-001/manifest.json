@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "change_id": "DUPCLEANER-PRIVACY-001",
+  "title": "DupCleaner 광고 데이터 개인정보 처리방침 정합화",
+  "status": "completed",
+  "branch": "main",
+  "product_id": "dup-cleaner-support",
+  "surface_ids": [
+    "dup-cleaner-support-docs"
+  ],
+  "created_at": "2026-08-22T11:11:10Z",
+  "updated_at": "2026-08-22T11:22:35Z",
+  "base_sha": "04b06aba23c57841de507943d68b86501d7745ed",
+  "goals": [
+    "공개 한국어·영어 개인정보 처리방침이 Firebase Analytics/Crashlytics, Google Mobile Ads/UMP, StoreKit 및 로컬 파일 처리와 일치한다."
+  ],
+  "non_goals": [
+    "PillToday 개인정보 처리방침 변경"
+  ],
+  "blockers": [],
+  "required_docs": [],
+  "reconciliation": {
+    "last_reconciled_sha": "1e4b76611202a0c2eec753102f8e2299408e18ff",
+    "reconciled_at": "2026-08-22T11:21:06Z",
+    "notes": "Published DupCleaner EN/KO policy commit 1e4b766 and verified raw GitHub HTTP 200."
+  },
+  "verification": [],
+  "knowledge_impact": {
+    "status": "reviewed",
+    "reviewed_sha": "1e4b76611202a0c2eec753102f8e2299408e18ff",
+    "reviewed_at": "2026-08-22T11:22:30Z",
+    "topic_reviews": [
+      {
+        "topic_id": "purpose",
+        "outcome": "updated",
+        "evidence_paths": [
+          "dupcleaner/privacy_policy_en.md"
+        ],
+        "notes": "DupCleaner policy scope now explicitly covers ads, analytics, diagnostics, purchases, and local file processing."
+      },
+      {
+        "topic_id": "architecture",
+        "outcome": "still_accurate",
+        "evidence_paths": [
+          "README.md"
+        ],
+        "notes": "Static support-site architecture remains unchanged."
+      },
+      {
+        "topic_id": "development",
+        "outcome": "still_accurate",
+        "evidence_paths": [
+          "README.md"
+        ],
+        "notes": "Local support publishing guidance remains unchanged."
+      },
+      {
+        "topic_id": "verification",
+        "outcome": "updated",
+        "evidence_paths": [
+            "docs/changes/completed/DUPCLEANER-PRIVACY-001/evidence/E-003.json"
+        ],
+        "notes": "Public policy URL and content verification evidence added."
+      },
+      {
+        "topic_id": "data",
+        "outcome": "updated",
+        "evidence_paths": [
+          "dupcleaner/privacy_policy_en.md"
+        ],
+        "notes": "Collected and locally processed data categories are documented."
+      },
+      {
+        "topic_id": "integrations",
+        "outcome": "updated",
+        "evidence_paths": [
+          "dupcleaner/privacy_policy_en.md"
+        ],
+        "notes": "Google Mobile Ads, UMP, Firebase, and StoreKit boundaries are documented."
+      },
+      {
+        "topic_id": "operations",
+        "outcome": "updated",
+        "evidence_paths": [
+          "dupcleaner/privacy_policy_ko.md"
+        ],
+        "notes": "Privacy controls and contact/publishing behavior are documented."
+      },
+      {
+        "topic_id": "risks",
+        "outcome": "updated",
+        "evidence_paths": [
+          "dupcleaner/privacy_policy_ko.md"
+        ],
+        "notes": "Retention, third-party sharing, choices, and child privacy risks are documented."
+      }
+    ]
+  },
+  "completed_at": "2026-08-22T11:22:35Z",
+  "completion": {
+    "outcome": "completed",
+    "follow_up": null,
+    "resume_after": null
+  }
+}
