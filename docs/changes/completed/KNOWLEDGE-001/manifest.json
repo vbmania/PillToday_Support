@@ -2,14 +2,14 @@
   "schema_version": 1,
   "change_id": "KNOWLEDGE-001",
   "title": "Knowledge Contract 초기 적용",
-  "status": "active",
+  "status": "completed",
   "branch": "main",
   "product_id": "pill-today-support",
   "surface_ids": [
     "pill-support-docs"
   ],
   "created_at": "2026-08-22T04:27:21Z",
-  "updated_at": "2026-08-22T04:27:21Z",
+  "updated_at": "2026-08-22T04:27:23Z",
   "base_sha": "35a82cecfbcf8ef3e113bd2e55580796532048fd",
   "goals": [
     "표준 8개 지식 주제의 정본 범위와 미검토 backlog를 명시한다"
@@ -24,5 +24,6 @@
     "reconciled_at": "2026-08-22T04:27:21Z",
     "notes": "Initialized from the latest non-knowledge source commit."
   },
-  "verification": []
+  "verification": [],
+  "completed_at": "2026-08-22T04:27:23Z"
 }

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "handoff_id": "H-KNOWLEDGE-001",
+  "change_id": "KNOWLEDGE-001",
+  "task_id": "T-001",
+  "assignment_id": "A-KNOWLEDGE-001",
+  "run_id": "R-KNOWLEDGE-001",
+  "status": "accepted",
+  "summary": "표준 8-topic explicit contract와 실제 미검토/missing backlog를 기록했다",
+  "commit_sha": "5e1495a21cfeba84ab59ba73916071f1ced8b903",
+  "changed_files": [
+    ".project-harness/project.json"
+  ],
+  "evidence_ids": [
+    "E-KNOWLEDGE-STATUS",
+    "E-KNOWLEDGE-CHECK"
+  ],
+  "submitted_at": "2026-08-22T04:27:23Z",
+  "reviewed_at": "2026-08-22T04:27:23Z",
+  "reviewed_by": "Coordinator",
+  "decision_notes": "Exact config commit, 8-topic status, check errors=0 verified; product behavior was not claimed."
+}

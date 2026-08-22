@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "run_id": "R-KNOWLEDGE-001",
+  "assignment_id": "A-KNOWLEDGE-001",
+  "change_id": "KNOWLEDGE-001",
+  "task_id": "T-001",
+  "status": "completed",
+  "runtime": {
+    "thread_id": null,
+    "model": "gpt-5.6-sol",
+    "effort": "xhigh"
+  },
+  "usage": null,
+  "started_at": "2026-08-22T04:27:21Z",
+  "ended_at": "2026-08-22T04:27:22Z"
+}

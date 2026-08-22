@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "assignment_id": "A-KNOWLEDGE-001",
+  "change_id": "KNOWLEDGE-001",
+  "task_id": "T-001",
+  "execution_mode": "direct",
+  "status": "accepted",
+  "role": "Coordinator",
+  "base_sha": "2abb9dfa263e75f99370d5e897db278ebc95f585",
+  "branch": "main",
+  "worktree": "/Users/work/Develop/PillToday_Support",
+  "write_set": [
+    ".project-harness/project.json"
+  ],
+  "delegation_reason": "표준 Knowledge Contract를 기존 source_of_truth에서 생성하되 review SHA는 추정하지 않는다",
+  "required_verification": [
+    "project-harness --repo . knowledge-status",
+    "project-harness --repo . check"
+  ],
+  "created_at": "2026-08-22T04:27:21Z",
+  "updated_at": "2026-08-22T04:27:23Z"
+}

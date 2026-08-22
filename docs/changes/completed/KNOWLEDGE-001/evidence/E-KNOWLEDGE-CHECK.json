@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "evidence_id": "E-KNOWLEDGE-CHECK",
+  "change_id": "KNOWLEDGE-001",
+  "task_id": "T-001",
+  "assignment_id": "A-KNOWLEDGE-001",
+  "run_id": "R-KNOWLEDGE-001",
+  "kind": "verification",
+  "status": "passed",
+  "command": "project-harness --repo . check",
+  "sha": "5e1495a21cfeba84ab59ba73916071f1ced8b903",
+  "artifact": "/Users/work/.codex/tmp/knowledge-rollout-20260822/pill-today-support-check.json",
+  "recorded_at": "2026-08-22T04:27:22Z"
+}
